@@ -1,11 +1,133 @@
 <!DOCTYPE html>
-<html>
-    <head></head>
-    <body>
-        <center>
-        <h1>SELAMAT DATANG</h1>
-        <h2> Terima kasih telah bergabung di website ini kami. Media belajar kita bersama!</h2>
-        </center>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        /* Body styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff6f91, #ff9671, #ffc75f, #f9f871);
+            background-size: 400% 400%;
+            animation: gradient 8s ease infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Gradient Animation */
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Decorative bubbles */
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            animation: float 8s ease-in-out infinite;
+        }
+        .bubble:nth-child(1) {
+            width: 60px;
+            height: 60px;
+            left: 20%;
+            top: 10%;
+            animation-duration: 6s;
+        }
+        .bubble:nth-child(2) {
+            width: 40px;
+            height: 40px;
+            left: 70%;
+            top: 30%;
+            animation-duration: 8s;
+        }
+        .bubble:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            left: 30%;
+            top: 70%;
+            animation-duration: 10s;
+        }
+        .bubble:nth-child(4) {
+            width: 100px;
+            height: 100px;
+            left: 80%;
+            top: 50%;
+            animation-duration: 12s;
+        }
+
+        /* Float animation for bubbles */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Container styling */
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            margin: 20px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        /* Heading styling */
+        h1 {
+            font-size: 48px;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ff6f91;
+            animation: pop 1s ease;
+        }
+
+        /* Paragraph styling */
+        p {
+            font-size: 24px;
+            color: #555;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Adding animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pop {
+            0% { transform: scale(0.8); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Bubbles for decorative effect -->
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    
+    <!-- Content container -->
+    <div class="container">
+        <h1>Selamat Datang</h1>
+        <p>Terima kasih telah bergabung di website kami. Media belajar kita bersama!</p>
+    </div>
+</body>
 </html>

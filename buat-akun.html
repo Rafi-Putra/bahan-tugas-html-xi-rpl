@@ -3,50 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Buat Account Baru</title>
 </head>
-<body>
-    <form action="">
-        <h1>Buat account baru</h1> 
-        <h3>Sign up form</h3>
-        <p>first name : </p>
-        <label for="First name"></label>
-        <input type="text " id="first name">
-        <p>Last name : </p>
-        <label for="Last name"></label>
-        <input type="text " id="Last name">
-        <p>Gender</p>
-        <input type="radio" id="Laki-Laki" name="Gender">
-        <label for="Laki-Laki">Laki-Laki</label><br>
-        <input type="radio" id="Perempuan" name="Gender">
-        <label for="Perempuan">Perempuan</label>
-        <p>Nationality</p>
-        <select name="Nationality" id="Nationality">
-            <option value="Indonesia">Indonesia</option>
-            <option value="inggris">inggris</option>
-            <option value="Jerman">Jerman</option>
-            <option value="Jepang">Jepang</option>
-            <option value="Belanda">Belanda</option>
-            <option value="korean">korean</option>
-            <option value="malaysia">malaysia</option>
-            <option value="sunda">sunda-empire</option>
+<body style="font-family: Arial, sans-serif; background: linear-gradient(to bottom right, #6a11cb, #2575fc); display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; color: #444;">
+    <form onsubmit="return false;" style="background-color: #ffffff; width: 400px; padding: 30px; border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); transition: transform 0.2s ease;">
+        <h1 style="text-align: center; color: #333333; font-size: 24px; margin-bottom: 20px; font-weight: bold;">Buat Account Baru</h1>
+        
+        <label style="color: #555555; font-weight: bold; font-size: 14px;">First name:</label>
+        <input type="text" name="first_name" style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #dddddd; border-radius: 8px; box-sizing: border-box; font-size: 14px; transition: border-color 0.3s ease;">
+        
+        <label style="color: #555555; font-weight: bold; font-size: 14px;">Last name:</label>
+        <input type="text" name="last_name" style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #dddddd; border-radius: 8px; box-sizing: border-box; font-size: 14px; transition: border-color 0.3s ease;">
+        
+        <label style="color: #555555; font-weight: bold; font-size: 14px;">Gender:</label>
+        <div class="radio-group" style="display: flex; justify-content: space-around; margin: 10px 0;">
+            <label style="font-weight: normal; color: #666666;"><input type="radio" name="gender" value="male" style="margin-right: 10px;"> Laki-Laki</label>
+            <label style="font-weight: normal; color: #666666;"><input type="radio" name="gender" value="female" style="margin-right: 10px;"> Perempuan</label>
+        </div>
+        
+        <label style="color: #555555; font-weight: bold; font-size: 14px;">Nationality:</label>
+        <select name="nationality" style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #dddddd; border-radius: 8px; box-sizing: border-box; font-size: 14px; transition: border-color 0.3s ease;">
+            <option value="indonesia">Indonesia</option>
+            <option value="other">Other</option>
         </select>
-        <p>Language Spoken</p>
-
-        <input type="checkbox" id="Bahasa Indonesia" name="Bahasa">
-         <label for="Bahasa Indonesia">Bahasa Indonesia</label><br>
-         <input type="checkbox" id="english" name="Bahasa">
-         <label for="Bahasa english">english</label><br>
-         <input type="checkbox" id="other" name="Bahasa">
-         <label for="other">other</label>
-           <p>Bio</p>
-           <textarea name="Bio"clos="13" 
-           rows="10"></textarea><br>
-           <p>
-               <a href="selamat.html">
-
-                   <input type="button" name="sign 
-                   up" id="sign Up" value="sign up">
-                </a>
-            </p>
+        
+        <label style="color: #555555; font-weight: bold; font-size: 14px;">Language Spoken:</label>
+        <div class="language-group" style="margin: 10px 0;">
+            <label style="display: block; font-weight: normal; color: #666666; margin: 5px 0;"><input type="checkbox" name="language" value="bahasa" style="margin-right: 5px;"> Bahasa Indonesia</label>
+            <label style="display: block; font-weight: normal; color: #666666; margin: 5px 0;"><input type="checkbox" name="language" value="english" style="margin-right: 5px;"> English</label>
+            <label style="display: block; font-weight: normal; color: #666666; margin: 5px 0;"><input type="checkbox" name="language" value="other" style="margin-right: 5px;"> Other</label>
+        </div>
+        
+        <label style="color: #555555; font-weight: bold; font-size: 14px;">Bio:</label>
+        <textarea name="bio" placeholder="Tell us a little about yourself..." style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #dddddd; border-radius: 8px; box-sizing: border-box; font-size: 14px; transition: border-color 0.3s ease; resize: vertical; min-height: 80px;"></textarea>
+        
+        <a href="selamat.html" style="display: block; width: 100%; padding: 12px; background-color: #4CAF50; color: #ffffff; font-weight: bold; font-size: 16px; text-align: center; cursor: pointer; border-radius: 8px; text-decoration: none; transition: background-color 0.3s ease; margin-top: 15px;">🚀 Sign Up</a>
     </form>
+</body>
+</html>
